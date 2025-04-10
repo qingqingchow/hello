@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y nginx && \
     rm -rf /var/lib/apt/lists/*
-
+ 
 # 暴露端口 80，供外部访问 Nginx
 EXPOSE 80
 
